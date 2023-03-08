@@ -11,4 +11,11 @@ class ApplicationController < Sinatra::Base
     users.to_json
     end
 
+    post "/user" do
+    new_user = User.create(JSON.parse(request.body.read))
+    new_user.to_json
+    end
+
+
+
 end
