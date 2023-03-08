@@ -4,7 +4,6 @@ require_relative "./config/environment"
 require "sinatra/activerecord/rake"
 
 task :server do
-
   # rackup -p PORT will run on the port specified (9292 by default)
   ENV["PORT"] ||= "9292"
   rackup = "rackup -p #{ENV['PORT']}"
