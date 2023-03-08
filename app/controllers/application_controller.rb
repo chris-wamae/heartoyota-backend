@@ -5,4 +5,10 @@ class ApplicationController < Sinatra::Base
     configure do 
         enable :cross_origin
     end
+
+    get "/" do
+    users = User.all
+    users.to_json
+    end
+
 end
