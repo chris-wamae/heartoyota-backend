@@ -1,0 +1,18 @@
+#this file configures the database settings  that 
+#will be used for each environment
+#sets the default settings that will apply to all environments 
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+#settings for a particluar environments
+#environment name:
+development:
+   #inherit settings from default
+   <<: *default
+   database: db/development.sqlite3
+
+production:
+  <<: *default
+  database: db/production.sqlite3
+
