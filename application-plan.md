@@ -5,7 +5,7 @@ This applicaation should allow:
 3. Users should be able to edit their username, user_email and image_url
 4. Users should be able to exit the competition by deleting their information from the database
 
-#  PSEUDO CODE
+# PSEUDO CODE
 1. Create a sql database
 2. Create a table with the following columns:
 - id
