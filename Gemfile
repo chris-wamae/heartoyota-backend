@@ -3,9 +3,12 @@ source "https://rubygems.org/"
 #the underlying architecture/technology most ruby frameworks are built on. 
 gem "rack"
 
-#gem "rack-cors"
+#Allows cross origin sharing for our application
+gem "rack-cors"
 
-#gem "rack-contrib"
+#Allows us to user JSONBodyParser functionality that allows 
+#us to work with the body of a request
+gem "rack-contrib"
 
 #framework that allows you to run your ruby code on the web.
 gem "sinatra"
