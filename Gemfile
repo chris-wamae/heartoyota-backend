@@ -11,26 +11,26 @@ gem "rack-cors"
 gem "rack-contrib"
 
 #framework that allows you to run your ruby code on the web.
-gem "sinatra"
+gem "sinatra", '~> 3.0', '>= 3.0.5'
 
 #gem "sinatra-cross_origin"
 
-gem "activerecord"
+gem "activerecord", '~> 7.0', '>= 7.0.4.2'
 
 # a gem that allows creation of macros in ruby
-gem "rake"
+gem "rake", '~> 13.0', '>= 13.0.6'
 
 #sqlite is a small and fast SQL database engine
-gem "sqlite3"
+gem "sqlite3", '~> 1.6', '>= 1.6.1'
 
 #extends sinatra with extension methods and rake tasks for dealing with an SQL database using the ActiveRecord ORM
-gem "sinatra-activerecord"
+gem "sinatra-activerecord", '~> 2.0', '>= 2.0.26'
 
 #encrypts passwords making them innaccessible incase of a data leak/theft
-gem "bcrypt"
+gem "bcrypt", '~> 3.1', '>= 3.1.18'
 
 #simple,multi-threaded  and highly parallel HTTP 1.1 server for Ruby/Rack applications.
-gem "puma"
+gem "puma", '~> 6.1'
 
 #bundles all the file requirements of the environment into one
-gem "require_all"
+gem "require_all", '~> 3.0'
